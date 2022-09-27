@@ -1,4 +1,4 @@
-const baseUrl =
+// const baseUrl =
 
 
 
@@ -7,6 +7,6 @@ const baseUrl =
 //loop over that array
 //Create Ski resort cards for each item in the array 
 
-const getAllResorts = () => {
+// const getAllResorts = () => {
 
-}
+// }
