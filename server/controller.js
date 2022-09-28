@@ -28,5 +28,28 @@ module.exports = {
         resortId++
 
         res.status(200).send(resorts)
+    },
+    deleteResort: (req, res) => {
+
+        const index = resorts.findIndex(element => element.id === +req.params.id)
+
+        resorts.splice(index, 1)
+
+        res.status(200).send(resorts)
+    },
+    updateLikes: (req, res) => {
+
+        const index = resorts.findIndex(element => element.id === +req.params.id)
+        const {type} = req.body
+
+        if(type === 'like'){
+            resorts[index].likes++
+        }else if( type === 'dislike'){
+            resorts[index].likes--
+        }
+        
+        res.status(200).send(resorts)
+        
     }
+
 }

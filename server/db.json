@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Brighton Mountain Resort",
-        "picture": "",
+        "picture": "a07f9665c683264046581c81cbdde600.jpg",
         "price": 125,
         "discription": "This Ski resort has eevryting you ae asking for from grommed runs, park, and the backcountry!",
         "likes": 0
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "name": "Park City",
-        "picture": "",
+        "picture": "images.jpg",
         "price": 215,
         "discription": "Park City resort is one of the biggest ski resort in norht America! This resort offers 7,300 acres of ski able terrain and inculeds one of the best parks in Utah!",
         "likes": 0
@@ -18,10 +18,10 @@
     {
         "id": 3,
         "name": "SunLight Mountain Resort",
-        "picture": "",
+        "picture": "imengine.public.prod.sci.navigacloud.jpg",
         "price": 65,
         "discription": "Sunlight ski resort has some of the best snow conditions i have been around! it also has terrain for everyone from beginer to expert!",
         "likes": 0 
     }
-
+ 
 ]
