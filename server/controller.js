@@ -1,6 +1,12 @@
 //requiring my db.json
 const resorts = require('./db.json')
+
+//requiring my db2.json
+const comments = require('./db2.json')
+
 let resortId = 4
+
+let commentId = 4
 
 // setting up the funtions for get, post, delete, put methods 
 
@@ -50,6 +56,15 @@ module.exports = {
         
         res.status(200).send(resorts)
         
+    },
+
+    ////////comment section
+
+    getComments: (req, res) => {
+        
+        res.status(200).send(comments)
     }
 
+
 }
+

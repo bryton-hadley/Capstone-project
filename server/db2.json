@@ -1,0 +1,19 @@
+[
+    {
+        "resortId": 1,
+        "commentId": 1,
+        "comment":  "I love this resort!"
+    },
+
+    {
+        "resortId": 2,
+        "commentId": 2,
+        "comment": "The food here is incredible"
+    },
+
+    {
+        "resortId": 3,
+        "commentId": 3,
+        "comment": "Most Inceridble snow and people to be around!"
+    }
+]
