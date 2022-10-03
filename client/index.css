@@ -31,15 +31,18 @@ h2 {
 }
 
 #postResort {
-    width: 350px;
+    width: 300px;
     height: 400px;
     background-color: #E1B07E;
-    position: relative;
+    position: absolute;
+    top: 200px;
+    left: 0px;
     display: flex; 
     flex-direction: column;
-    justify-content: space-evenly; 
+    flex-wrap: wrap;
+    justify-content: center; 
     align-items: center;
-    margin: 30px;
+    margin: 15px;
     border-radius: 10px;
     border: solid 20px #5C9EAD ;
 }
@@ -50,11 +53,6 @@ input {
 }
 
 
-
-
-
-
-
 .resort-img{
     width: 250px;
     height: 250px;
@@ -63,10 +61,6 @@ input {
     border: solid 10px #E1B07E ;
     border-radius: 10px;
 }
-
-
-
-
 
 .resort-card {
     width: 300px;
@@ -98,11 +92,13 @@ input {
     width: 100%; 
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 5px;
 }
 
 #deleteBtn {
     display: flex;
     justify-content: center;
+    align-items: center;
 
 }

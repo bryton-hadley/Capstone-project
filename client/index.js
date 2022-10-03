@@ -59,7 +59,7 @@ const createResortCard = (resort) => {
         Likes: ${resort.likes}
         <button onclick="updateResort(${resort.id}, 'dislike')">Dislike</button>
         <br></br>
-        <button id="deleteBtn" onclick="deleteResort(${resort.id})">Delete Ski Resort</button>
+        <button id="deleteBtn" onclick="deleteResort(${resort.id})">Delete Resort</button>
     
     </section>
     <br></br>
