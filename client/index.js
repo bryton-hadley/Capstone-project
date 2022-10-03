@@ -47,25 +47,21 @@ const createResortCard = (resort) => {
     resortCard.classList.add('resort-card')
     
     resortCard.innerHTML = `
-    <img src=${resort.picture} alt='resort image'/>
-    <p>${resort.name}<p>
-    <p>${resort.discription}<p>
-    <p>${resort.price}<p>
-    <section>
     
+    <img src=${resort.picture} alt='resort image'class="resort-img"/>
+    <p id="resort-name">${resort.name}<p>
+    <p id="resort-discription">${resort.discription}<p>
+    <p id="resort-price">${resort.price}<p>
+    
+
+    <section id="btn-container">
         <button onclick="updateResort(${resort.id}, 'like')">Like</button>
         Likes: ${resort.likes}
         <button onclick="updateResort(${resort.id}, 'dislike')">Dislike</button>
-        <button onclick="deleteResort(${resort.id})">Delete Ski Resort</button>
+        <br></br>
+        <button id="deleteBtn" onclick="deleteResort(${resort.id})">Delete Ski Resort</button>
     
     </section>
-    
-    <section id="add-comment">
-        <input type="text"  id="commentInput(${resort.id})" placeholder="Add a Comment!"
-        <button id="addCommentBtn" onclick="addComment(${resort.id})">Post</button>    
-    </section>
-    
-    
     <br></br>
     <br></br>
     
@@ -75,24 +71,7 @@ const createResortCard = (resort) => {
     
 }
 
-//setting up the comment card
-const createCommentCard = (comment) => {
 
-    const commentCard = document.createElement('section')
-    commentCard.classList.add('add-comment')
-
-    commentCard.innerHTML = `
-    <section id="commentRow">
-
-        <label for=${comment.id}>
-            <input onclick="" 
-        </label>
-    
-    </section>
-
-
-    `
-}
 //seting up the function to update the resort card
 const updateResort = (id, type) => {
     axios.put(`${baseUrl}/updateLikes/${id}`, {type})
@@ -152,14 +131,7 @@ const deleteResort = (id) => {
         console.log(err)
     })
 }
-//seting up the function to get comments 
-const getAllComments = () => {
 
-    axios.get(`${baseUrl}/getComment`)
-    .then((res) => {
-        res.data
-    })
-}
 
 postButton.addEventListener('submit', addResort)
 getAllResorts()

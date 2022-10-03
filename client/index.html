@@ -14,20 +14,27 @@
     </header>
     
     <main>
-        <h3>List of Ski Resorts</h3>
+        
         <section id="displayResorts"></section>
         
-        
-        <form id="postResort">
-            <h3>Add your favorite ski resorts!</h3>
-            <input id ="nameInput" type="text" placeholder="Name of Resort">
-            <input id="imageInput" type="text" placeholder="image url">
-            <input id="priceInput" type="text" placeholder="Day Pass Price">
-            <input id="discriptionInput" type="text" placeholder="Short discription">
-            <button id="postResorts" type="submit">Post Resort!</button>
+        <div class="form-border">
 
-        </form>
-        
+            <form id="postResort">
+                <h3>Add your favorite ski resorts!</h3>
+                
+                <p>Name of ski Resort</p>
+                <input id ="nameInput" type="text" placeholder="Name of Resort">
+                <p>Add a Picture</p>
+                <input id="imageInput" type="text" placeholder="image url">
+                <p>How Much is a Day Pass?</p>
+                <input id="priceInput" type="text" placeholder="Day Pass Price">
+                <p>What do you like about this Resort?</p>
+                <input id="discriptionInput" type="text" placeholder="Short discription">
+                <button id="postResorts" type="submit">Post Resort!</button>
+                
+            </form>
+            
+        </div>
     </main>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
