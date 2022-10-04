@@ -6,7 +6,7 @@ like & dislike post  you can slo add the price of the resort for a day pass tick
 
 
 here is the teh main page and what it looks like:
-
+https://github.com/bryton-hadley/Capstone-project/blob/main/pictuers/main-page.png?
 
 TECHNOLOGY
 
@@ -18,8 +18,11 @@ FRONT-END
 
 in the front end of things i use a basic boilerr plate html code to get the structer of things. on the main page i used a form to crewat the post resort section of the page witch uses inputs to take in the info that the user is giving us about the ski resort. the frontend also has a section for displaying the post, the frontend also has the CSS styling linked to it as well as a link to link the frontend to the backedend.
 
+here is a picture of the form:
+https://github.com/bryton-hadley/Capstone-project/blob/main/pictuers/post%20form%20.png
 
 BACK-END 
 
 this is where all the functionality is like  axios post, put, get, and delete 
 this is also where the database is where it stores all the info about the resorts, this is also where i set up the innerHTML to create a new ski resort post as well.
+
