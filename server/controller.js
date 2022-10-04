@@ -58,13 +58,6 @@ module.exports = {
         
     },
 
-    ////////comment section
-
-    getComments: (req, res) => {
-        
-        res.status(200).send(comments)
-    }
-
-
+    
 }
 

@@ -51,7 +51,7 @@ const createResortCard = (resort) => {
     <img src=${resort.picture} alt='resort image'class="resort-img"/>
     <p id="resort-name">${resort.name}<p>
     <p id="resort-discription">${resort.discription}<p>
-    <p id="resort-price">${resort.price}<p>
+    <p id="resort-price">$${resort.price}<p>
     
 
     <section id="btn-container">
